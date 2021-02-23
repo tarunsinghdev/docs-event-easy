@@ -13,6 +13,8 @@ module.exports = {
       'project-structure',
       'hot-module-replacement',
       'firebase',
+      'choosing-a-database',
+      'firestore',
     ],
     Features: ['scaffolding', 'mdx'],
   },
