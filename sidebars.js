@@ -8,6 +8,12 @@ module.exports = {
       'doc2',
       'doc3',
     ],
-    Features: ['scaffolding','mdx'],
+    'Building the base': [
+      'before-we-start',
+      'project-structure',
+      'hot-module-replacement',
+      'firebase',
+    ],
+    Features: ['scaffolding', 'mdx'],
   },
 };
