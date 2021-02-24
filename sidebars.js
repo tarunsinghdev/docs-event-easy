@@ -15,6 +15,7 @@ module.exports = {
       'firebase',
       'choosing-a-database',
       'firestore',
+      'redux',
     ],
     Features: ['scaffolding', 'mdx'],
   },
