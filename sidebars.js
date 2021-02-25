@@ -16,6 +16,7 @@ module.exports = {
       'choosing-a-database',
       'firestore',
       'redux',
+      'formik',
     ],
     Features: ['scaffolding', 'mdx'],
   },
