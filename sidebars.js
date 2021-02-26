@@ -18,6 +18,12 @@ module.exports = {
       'redux',
       'formik',
     ],
+    Working: [
+      'introduction',
+      'app-initialization',
+      'managing-events',
+      'fetching-events',
+    ],
     Features: ['scaffolding', 'mdx'],
   },
 };
