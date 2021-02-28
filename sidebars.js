@@ -1,19 +1,13 @@
 module.exports = {
   someSidebar: {
-    Introduction: [
-      'getting-started',
-      'project-overview',
-      'important',
-      'doc1',
-      'doc2',
-      'doc3',
-    ],
+    Introduction: ['getting-started', 'project-overview', 'important', 'doc1'],
     'Building the base': [
       'before-we-start',
       'project-structure',
       'hot-module-replacement',
       'firebase',
       'choosing-a-database',
+      'realtime-database',
       'firestore',
       'redux',
       'formik',
@@ -23,6 +17,8 @@ module.exports = {
       'app-initialization',
       'managing-events',
       'fetching-events',
+      'exploring-event',
+      'profile',
     ],
     Features: ['scaffolding', 'mdx'],
   },
