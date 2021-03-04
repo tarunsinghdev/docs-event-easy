@@ -49,7 +49,7 @@ export default firebase;
 
 ## Authentication with Firebase
 
-Firebase makes authentication easy by providing methods for various platforms. We just need to call them to access them.
+Firebase makes authentication easy by providing methods for various platforms. We just need to call the methods for using the authentication feature.
 
 ### Sign up new users
 
@@ -65,8 +65,7 @@ export const registerInFirebase = async (creds) => {
 };
 ```
 
-> createUserWithEmailAndPassword() returns **userCredentials**. By using **updateProfile()** which is yet another method that firebase provides we are updating the user's displayName as shown above.
-> **setUserProfileData()** is a function defined in `firestoreService.js` file which basically is creating a document in firestore with user credentials. Don't worry we'll look on how firestore works shortly.
+> **createUserWithEmailAndPassword()** returns **[user credentials](https://firebase.google.com/docs/reference/js/firebase.auth#usercredential)**. By using **updateProfile()** which is yet another method that firebase provides we are updating the user's displayName as shown above.<br/> > **setUserProfileData()** is a function defined in `firestoreService.js` file which basically is creating a document in firestore with **[user account](https://firebase.google.com/docs/reference/js/firebase.User) info**(here we store only the fields necessary) . Don't worry we'll look on how firestore works shortly.
 
 ### Sign in existing users
 
@@ -121,7 +120,7 @@ export const signOutFirebase = () => {
 
 - To read more about firebase Auth visit : [firebase.auth](https://firebase.google.com/docs/reference/js/firebase.auth)
 
-- [User Credential](https://firebase.google.com/docs/reference/js/firebase.auth#usercredential) are returned when signing in/up:
+- [User Credential](https://firebase.google.com/docs/reference/js/firebase.auth#usercredential) is returned when signing in/up:
 
 - User Credential Contains : [User](https://firebase.google.com/docs/reference/js/firebase.User) + [Auth Credentials](https://firebase.google.com/docs/reference/js/firebase.auth.AuthCredential) + [Additional User Info](https://firebase.google.com/docs/reference/js/firebase.auth#additionaluserinfo)
 

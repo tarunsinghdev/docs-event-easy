@@ -3,7 +3,7 @@ id: realtime-database
 title: Realtime Database
 ---
 
-The **Firebase Realtime Database** is a cloud-hosted database. Data is stored as JSON and synchronized in realtime to every connected client. When you build cross-platform apps with our Android, iOS, and JavaScript SDKs, all of your clients share one Realtime Database instance and automatically receive updates with the newest data.
+The **Firebase Realtime Database** is a cloud-hosted database. Data is stored as JSON and synchronized in realtime to every connected client. When you build cross-platform apps with Android, iOS, and JavaScript SDKs, all of the clients share one Realtime Database instance and automatically receive updates with the newest data.
 
 In our project we'll be using **Firebase Realtime Database** for our `EventDetailedChat.jsx` component.
 
@@ -64,7 +64,7 @@ We dispatch an action `listenToEventChat` that stores our `comments` as an array
 
 :::note
 The purpose of this article was to show the basic functionality that can be performed with our Firebase Realtime Database. <br/>
-A more detailed explaination about the chat component will be given in the [Exploring Events](exploring-event/#event-chat)
+A more detailed explaination about the chat component will be given in the [Exploring Events](exploring-event/#event-chat) section.
 :::
 
 ## Useful Resources

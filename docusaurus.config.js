@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Event Easy',
+  title: 'Event Easy docs',
   tagline: 'Simplifying the events.',
   url: 'events-easy.firebaseapp.com/',
   baseUrl: '/',
@@ -10,7 +10,7 @@ module.exports = {
   projectName: 'docs-event-easy', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Event Easy',
+      title: 'Event Easy docs',
       logo: {
         alt: 'Event Easy',
         src: 'img/logo.png',
@@ -19,12 +19,12 @@ module.exports = {
         {
           to: 'docs/getting-started',
           activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          label: 'Getting Started',
+          position: 'right',
         },
-        { to: 'blog', label: 'Blog', position: 'left' },
+        { to: 'blog', label: 'Blog', position: 'right' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/tarunsinghdev/event-easy',
           label: 'GitHub',
           position: 'right',
         },
@@ -32,52 +32,14 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Event Easy, Inc. Built with Docusaurus.`,
+    },
+    announcementBar: {
+      id: 'website_under_construction',
+      content:
+        '<div style="font-weight: bold">Website under construction. <a target="_blank" href="https://events-easy.firebaseapp.com/">Check out our app Event Easy</a></div>',
+      backgroundColor: '#000',
+      textColor: '#f5f6f7',
     },
   },
   presets: [
@@ -88,13 +50,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/tarunsinghdev/docs-event-easy/tree/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/tarunsinghdev/docs-event-easy/tree/master/blog',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

@@ -178,6 +178,14 @@ export const deletePhotoFromCollection = (photoId) => {
 };
 ```
 
+#### Events Tab
+
+TO DO
+
+#### Following Tab
+
+TO DO
+
 ## Final Redux state
 
 ```javascript

@@ -14,12 +14,13 @@ module.exports = {
     ],
     Working: [
       'introduction',
+      'scaffolding',
       'app-initialization',
       'managing-events',
       'fetching-events',
       'exploring-event',
       'profile',
     ],
-    Features: ['scaffolding', 'mdx'],
+    Features: ['mdx'],
   },
 };

@@ -44,3 +44,7 @@ Below is a pictorial view of our components that'll be the building block of our
 [![mock-event-easy](https://user-images.githubusercontent.com/25122604/109331257-a4267f00-7882-11eb-8dc3-02bb56547a19.png)](https://user-images.githubusercontent.com/25122604/109331257-a4267f00-7882-11eb-8dc3-02bb56547a19.png)
 
 **So enough scaffolding, let's look into the working of these component from the next section.**
+
+:::tip
+If you find something unclear or unable to visualize components you can always find **pictorial representation** of the components **[here](scaffolding/#rough-sketch)**
+:::
