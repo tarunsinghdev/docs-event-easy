@@ -9,6 +9,7 @@ module.exports = {
   organizationName: 'tarunsinghdev', // Usually your GitHub org/user name.
   projectName: 'docs-event-easy', // Usually your repo name.
   themeConfig: {
+    hideableSidebar: true,
     navbar: {
       title: 'Event Easy docs',
       logo: {
