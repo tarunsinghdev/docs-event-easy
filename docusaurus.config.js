@@ -24,7 +24,7 @@ module.exports = {
         },
         { to: 'blog', label: 'Blog', position: 'right' },
         {
-          href: 'https://github.com/tarunsinghdev/event-easy',
+          href: 'https://github.com/tarunsinghdev/docs-event-easy',
           label: 'GitHub',
           position: 'right',
         },

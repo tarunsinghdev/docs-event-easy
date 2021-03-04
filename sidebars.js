@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    Introduction: ['getting-started', 'project-overview', 'important', 'doc1'],
+    Introduction: ['getting-started', 'project-overview', 'important'],
     'Building the base': [
       'before-we-start',
       'project-structure',
@@ -21,6 +21,6 @@ module.exports = {
       'exploring-event',
       'profile',
     ],
-    Features: ['mdx'],
+    'Wrap Up': ['congrats'],
   },
 };

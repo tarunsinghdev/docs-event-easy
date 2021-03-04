@@ -3,7 +3,7 @@ id: profile
 title: Profile
 ---
 
-In this article, we look into the workflow of what happens when a user visits his/her **own profile** or visits **other user profile**.
+In this article, we look into the workflow of what happens when a user visits **own profile** or visits **other user profile**.
 
 ## Profile Page
 
@@ -47,7 +47,7 @@ A user can **upload** and **set profile photo**.
   When user clicks on `Add Photo` button in **Photos Tab**, `<PhotoWidgetComponent />` renders and user needs to go through 3 steps. <br />
   Uploading photos involves three steps:
 
-  - **Step 1 Add Photo :** A `<PhotoWidgetDropzone /`> renders. We use [react-dropzone](https://react-dropzone.js.org/). As the name suggest we drag and drop or simply select our photo from our local system. On selecting it then saves our selected file in a located state name `file`.
+  - **Step 1 Add Photo :** A `<PhotoWidgetDropzone /`> renders. We use [react-dropzone](https://react-dropzone.js.org/). As the name suggest we drag and drop or simply select our photo from our local system. On selecting it then saves our selected file in a located state named `file`.
   - **Step 2 Resize :** A `<PhotoWidgetCropper />` renders. We use [react-cropper](https://github.com/react-cropper/react-cropper). We crop the image and save the cropped image in our local state named `image`.
   - **Step 3 Preview & Upload :** We are shown the preview of the selected image and we have two options to **upload** or **cancel** the process.<br/>
 
@@ -180,11 +180,72 @@ export const deletePhotoFromCollection = (photoId) => {
 
 #### Events Tab
 
-TO DO
+The Events Tab renders yet three other tabs for **past events**, **future events** and **hosting events** of the user.<br/>
+
+`ProfileContent.jsx` passes `profile` which is either `currentUserProfile` or `selectedUserProfile` to `EventsTab.jsx`. Based on the current active tab events are fetched from the firestore.
+
+```javascript
+useFirestoreCollection({
+  query: () => getUserEventsQuery(activeTab, profile.id),
+  data: (events) => dispatch(listenToUserEvents(events)),
+  deps: [dispatch, activeTab, profile.id],
+});
+```
+
+```javascript
+export const getUserEventsQuery = (activeTab, userUid) => {
+  let eventsRef = db.collection('events');
+  const today = new Date();
+  switch (activeTab) {
+    case 1: //past events
+      return eventsRef
+        .where('attendeeIds', 'array-contains', userUid)
+        .where('date', '<=', today)
+        .orderBy('date', 'desc');
+    case 2: //hosting
+      return eventsRef.where('hostUid', '==', userUid).orderBy('date');
+    default:
+      return eventsRef
+        .where('attendeeIds', 'array-contains', userUid)
+        .where('date', '>=', today)
+        .orderBy('date');
+  }
+};
+```
+
+After fetching the events from the **firestore** we dispatch an action `listenToUserEvents` which is responsible for storing the fetched events in our **redux store** under **profileEvents**.
 
 #### Following Tab
 
-TO DO
+We store the logic for **followers tab** and **following tab** in a single file named `Following Tab`.
+
+`ProfileContent.jsx` component passes the `activeTab` and the `profile`, again the profile is either `selectedUserProfile` our `currentUserProfile`. Based on the activeTab we call `getFollowersCollection` that fetches the user's followers or following collection.
+
+```javascript
+useFirestoreCollection({
+  query:
+    activeTab === 3
+      ? () => getFollowersCollection(profile.id)
+      : () => getFollowingCollection(profile.id),
+  data: (data) =>
+    activeTab === 3
+      ? dispatch(listenToFollowers(data))
+      : dispatch(listenToFollowings(data)),
+  deps: [activeTab, dispatch],
+});
+```
+
+```javascript
+export const getFollowersCollection = (profileId) => {
+  return db.collection('following').doc(profileId).collection('userFollowers');
+};
+
+export const getFollowingCollection = (profileId) => {
+  return db.collection('following').doc(profileId).collection('userFollowing');
+};
+```
+
+After fetching **followers** or **following** collection we dispatch an action `listenToFollowers` or `listenToFollowing` accordingly that stores the **following/followers** count as an array in our **redux store**.
 
 ## Final Redux state
 
