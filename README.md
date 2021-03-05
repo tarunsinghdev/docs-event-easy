@@ -1,10 +1,10 @@
 # 📑 Event Easy docs
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/tarunsinghdev/docs-event-easy/pulls)
-[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)]()
-[![Build passing](https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=flat-square)]()&nbsp;![Made with Love in India](https://madewithlove.org.in/badge.svg)
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://docs-events-easy.netlify.app/)
+[![Build passing](https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=flat-square)](https://docs-events-easy.netlify.app/)&nbsp;![Made with Love in India](https://madewithlove.org.in/badge.svg)
 
-This is the **official documentation website** of the project **[Event Easy](https://events-easy.firebaseapp.com/)**
+This is the **official [documentation website](https://docs-events-easy.netlify.app/)** of the project **[Event Easy](https://events-easy.firebaseapp.com/)**
 
 Learning has never been more fun.
 
