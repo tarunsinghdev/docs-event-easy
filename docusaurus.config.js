@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Event Easy docs',
   tagline: 'Simplifying the events.',
-  url: 'events-easy.firebaseapp.com/',
+  url: 'https://docs.events-easy.netlify.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
