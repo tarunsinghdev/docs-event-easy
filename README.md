@@ -1,33 +1,28 @@
-# Website
+# 📑 Event Easy docs
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/tarunsinghdev/docs-event-easy/pulls)
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)]()
+[![Build passing](https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=flat-square)]()&nbsp;![Made with Love in India](https://madewithlove.org.in/badge.svg)
 
-## Installation
+This is the **official documentation website** of the project **[Event Easy](https://events-easy.firebaseapp.com/)**
 
-```console
-yarn install
-```
+Learning has never been more fun.
 
-## Local Development
+## Screenshots
 
-```console
-yarn start
-```
+### Homepage
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+![image](https://user-images.githubusercontent.com/25122604/110159077-38a75900-7e10-11eb-8352-e6e09c1437d8.png)
 
-## Build
+### Docs Page
 
-```console
-yarn build
-```
+![image](https://user-images.githubusercontent.com/25122604/110159184-62608000-7e10-11eb-824f-f99312606ca1.png)
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+### Blogs
 
-## Deployment
+![image](https://user-images.githubusercontent.com/25122604/110159283-8328d580-7e10-11eb-9775-ee617af59324.png)
 
-```console
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
+## Don't forget to give this repo a ⭐ if you like this repo and want to appreciate the efforts
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
