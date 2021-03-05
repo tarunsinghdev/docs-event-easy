@@ -7,9 +7,9 @@ So before we start let's first look at what we'll be building and what will be t
 
 ## What We'll be building
 
-We'll be building a fully fletched **Events** app where a user will be able to **_create events_, _join events_, _authenticate_, _follow/unfollow_ **user and most of all **_chat(comment & reply)_** to events.
+We'll be building a fully fletched **Events** app where a user will be able to **_create events_, _join events_, _authenticate_, _follow/unfollow_ **users, and most of all **_chat(comment & reply)_** to events.
 
-If that's sound interesting to you stick around and we'll learn to build all that.
+If that sounds interesting to you stick around and we'll learn to build all that.
 
 ## Finished Website
 

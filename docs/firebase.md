@@ -4,7 +4,7 @@ title: Firebase
 ---
 
 We'll be using [Firebase](https://firebase.google.com/) to manage our entire backend.
-Firebase provides a ready to go backend. It provides many useful services but the services we're interested are `Firestore`, `Storage`, `Hosting`.
+Firebase provides a ready-to-go backend. It provides many useful services but the services we're interested in are `Firestore`, `Storage`, `Hosting`.
 
 :::note
 
@@ -65,7 +65,8 @@ export const registerInFirebase = async (creds) => {
 };
 ```
 
-> **createUserWithEmailAndPassword()** returns **[user credentials](https://firebase.google.com/docs/reference/js/firebase.auth#usercredential)**. By using **updateProfile()** which is yet another method that firebase provides we are updating the user's displayName as shown above.<br/> > **setUserProfileData()** is a function defined in `firestoreService.js` file which basically is creating a document in firestore with **[user account](https://firebase.google.com/docs/reference/js/firebase.User) info**(here we store only the fields necessary) . Don't worry we'll look on how firestore works shortly.
+> **createUserWithEmailAndPassword()** returns **[user credentials](https://firebase.google.com/docs/reference/js/firebase.auth#usercredential)**. By using **updateProfile()** which is yet another method that firebase provides we are updating the user's displayName as shown above.<br/>
+> **setUserProfileData()** is a function defined in `firestoreService.js` file which basically is creating a document in firestore with **[user account](https://firebase.google.com/docs/reference/js/firebase.User) info**(here we store only the fields necessary) . Don't worry we'll look on how firestore works shortly.
 
 ### Sign in existing users
 

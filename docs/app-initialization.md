@@ -20,7 +20,7 @@ Here when the logged in users(that had not logged out from the previous session)
 
 ### Persisting Login
 
-We use browser storage for the persisting the login. Here is a good news for you all, firebase has got us covered here. We don't need to do anything. It automatically stores our `user` in `Indexed DB` from when we can perform some action and **auto sign in** the user.
+We use browser storage for persisting the login. Here is good news for you all, firebase has got us covered here. We don't need to do anything. It automatically stores our `user` in `Indexed DB` from when we can perform some action and **auto-sign in** the user.
 
 When the app loads we manually dispatch an action `verifyAuth()` from our `configStore.js`.
 

@@ -15,7 +15,7 @@ This will be our landing page of our app. We'll try to keep it simple and clean.
 
 ### Navigation Bar
 
-This like any other navigation bar, we will manage our _routes_ of our app.
+This like any other navigation bar, we will manage the _routes_ of our app.
 
 ### Authentication
 

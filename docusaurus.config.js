@@ -38,7 +38,7 @@ module.exports = {
     announcementBar: {
       id: 'website_under_construction',
       content:
-        '<div style="font-weight: bold">Website under construction. <a target="_blank" href="https://events-easy.firebaseapp.com/">Check out our app Event Easy</a></div>',
+        '<div style="font-weight: bold">Welcome to the official documentation of Event Easy. <a target="_blank" href="https://events-easy.firebaseapp.com/">Click to see live website.</a></div>',
       backgroundColor: '#000',
       textColor: '#f5f6f7',
     },

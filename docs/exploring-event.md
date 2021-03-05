@@ -118,7 +118,7 @@ export const getEventChatRef = (eventId) => {
 };
 ```
 
-We call `getEventChatRef` from the `useEffect` which returns a reference of our chats stored and we then check if the `snapshot` exists(i.e we have chats are present) then we take out the data as `snapshot.val()` but this data is of **JSON** type and we want to store it as an array in our **redux store**. Thus, we call another function `firebaseObjectToArray` which converts from JSON to our required array.
+We call `getEventChatRef` from the `useEffect` which returns a reference of our chats stored and we then check if the `snapshot` exists(i.e chats are present) then we take out the data as `snapshot.val()` but this data is of **JSON** type and we want to store it as an array in our **redux store**. Thus, we call another function `firebaseObjectToArray` which converts from JSON to our required array.
 
 ```javascript
 export const firebaseObjectToArray = (snapshot) => {

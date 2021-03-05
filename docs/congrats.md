@@ -10,7 +10,7 @@ export const Highlight = ({children, color}) => ( <span style={{
       padding: '0.2rem',
     }}>{children}</span> );
 
-Congratulations 🎉🎉 on making this far. Though it was not comparable to a video guide you watch online, every effort has been made to cover each and every concept in the project.<br/> If you find there's something I was missing or required to be explained feel free to raise a **[issue](https://github.com/tarunsinghdev/docs-event-easy/issues)**
+Congratulations 🎉🎉 on making it this far. Though it was not comparable to a video guide you watch online, every effort has been made to cover each and every concept in the project.<br/> If you find there's something I was missing or required to be explained feel free to raise an **[issue](https://github.com/tarunsinghdev/docs-event-easy/issues)**
 
 If you feel you could explain the topic a little better or found some bug and want to <Highlight color="#25c2a0">**contribute**</Highlight>, you can go here. [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/tarunsinghdev/docs-event-easy/pulls)
 

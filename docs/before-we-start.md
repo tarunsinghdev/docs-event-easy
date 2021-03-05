@@ -9,6 +9,6 @@ If you already know these, feel free to skip this section and continue to the ne
 
 :::note
 
-If you plan to skip this section and encounter some problem ahead in the sections don't forget to get back to this section as there might be already a solution available for your problem.
+If you plan to skip this section and encounter some problems, ahead in the sections don't forget to get back to this section as there might be already a solution available for your problem.
 
 :::

@@ -5,11 +5,11 @@ title: Project Structure
 
 Let's begin with Project Structure.
 
-It depends on an individual choice how they structure their projects.
-However, in this project we'll be splitting our app into two main folders `app` and `features` under `src` folder.<br/>
+It depends on an individual choice of how they structure their projects.
+However, in this project, we'll be splitting our app into two main folders `app` and `features` under the `src` folder.<br/>
 
-For the assets like images, logo, etc. We'll put them into `public`folder.<br/>
-We'll use a global css file `styles.css`(located in `src/app/layout`) and we store our `index.js` file in our `src` folder.
+For the assets like images, logo, etc. We'll put them into the `public` folder.<br/>
+We'll use a global CSS file `styles.css`(located in `src/app/layout`) and we store our `index.js` file in our `src` folder.
 <br/>
 
 ```
