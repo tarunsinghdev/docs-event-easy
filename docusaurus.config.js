@@ -10,7 +10,12 @@ module.exports = {
   projectName: 'docs-event-easy', // Usually your repo name.
   themeConfig: {
     hideableSidebar: true,
+    algolia: {
+      apiKey: 'c13c5c354aa11c9cdc9c4e38eac1fc6e',
+      indexName: 'docs-events-easy',
+    },
     navbar: {
+      hideOnScroll: true,
       title: 'Event Easy docs',
       logo: {
         alt: 'Event Easy',
